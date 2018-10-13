@@ -8,6 +8,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListView;
@@ -17,7 +19,7 @@ import com.nutrientesbio.DAO.CriaBanco;
 import com.nutrientesbio.Model.Nutriente;
 import com.nutrientesbio.R;
 
-public class DicionarioView extends Activity {
+public class DicionarioView extends AppCompatActivity {
 
     public ArrayList<Nutriente> nutrientes = new ArrayList<>();
 
@@ -25,6 +27,7 @@ public class DicionarioView extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dicionariomain);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //cria banco de dados
         BancoController crud = new BancoController(getBaseContext());
         crud.carregaDados();
@@ -137,6 +140,19 @@ public class DicionarioView extends Activity {
     }
 
 
+
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            finish();
+        }
+        Intent myIntent = new Intent(getApplicationContext(), MainActivityView.class);
+        startActivityForResult(myIntent, 0);
+        return true;
+    }
+
     public void exibeNutriente(View view) {
         Button b = (Button) view;
         String resposta = b.getText().toString();
@@ -149,12 +165,12 @@ public class DicionarioView extends Activity {
 
     }
 
-    public void voltaMain(View view) {
+    /*public void voltaMain(View view) {
 
         Intent lIntent = new Intent();
         lIntent.setClass(this, MainActivityView.class);
         startActivity(lIntent);
 
-    }
+    }*/
 
 }

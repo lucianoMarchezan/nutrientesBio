@@ -17,15 +17,7 @@
         android:layout_height="match_parent">
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Voltar"
-            android:id="@+id/buttonVoltaMain"
-            android:onClick="voltaMain"
-            android:background="@color/colorCancel"
-            style="@style/Widget.AppCompat.Button.Colored"
-            />
+
 
         <TextView
             android:layout_width="wrap_content"

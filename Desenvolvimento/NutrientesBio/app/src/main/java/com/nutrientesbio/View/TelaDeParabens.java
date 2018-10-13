@@ -3,6 +3,7 @@ package com.nutrientesbio.View;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -28,14 +29,19 @@ public class TelaDeParabens extends AppCompatActivity {
         t4.setText(String.valueOf(tentativas[3]));
 
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void voltaMain(View view) {
-        Intent lIntent = new Intent();
-        lIntent.setClass(this, MainActivityView.class);
-        startActivity(lIntent);
 
 
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
 
+        if (id == android.R.id.home) {
+            finish();
+        }
+        Intent myIntent = new Intent(getApplicationContext(), MainActivityView.class);
+        startActivityForResult(myIntent, 0);
+        return true;
     }
 }

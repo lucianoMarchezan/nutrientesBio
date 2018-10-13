@@ -11,11 +11,23 @@ import com.nutrientesbio.R;
 
 public class RotulosMain extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rotulos_main);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
 
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            finish();
+        }
+        Intent myIntent = new Intent(getApplicationContext(), MainActivityView.class);
+        startActivityForResult(myIntent, 0);
+        return true;
     }
 
     public void exibeDetalhes(View view) {
@@ -27,13 +39,13 @@ public class RotulosMain extends AppCompatActivity {
 
     }
 
-    public void voltaMain(View view) {
+   /* public void voltaMain(View view) {
 
         Intent lIntent = new Intent();
         lIntent.setClass(this, MainActivityView.class);
         startActivity(lIntent);
 
-    }
+    }*/
 
 
 }
