@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NutrientesBio</string>
+    <string name="medida_caseira">Indica a medida normalmente utilizada pelo consumidor para medir alimentos.
+        Por exemplo: fatias, unidades, pote, xícaras, copos, colheres de sopa. A apresentação da medida caseira é obrigatória
+Esta informação vai ajudar você, consumidor, a entender melhor as informações nutricionais.
+</string>
+    <string name="porcao">É a quantidade média do alimento que deve ser usualmente consumida por pessoas sadias cada
+vez que o alimento é consumido.
+</string>
+    <string name="vd">Percentual de Valores Diários (%VD) é um número em percentual que indica o quanto o
+produto em questão apresenta de energia e nutrientes em relação a uma dieta 2000 calorias.
+</string>
+    <string name="lista_ingre">Informa os ingredientes que compõem oproduto. Através da sua leitura o consumidor pode identificar a presença de termos,
+        como açúcar,sacarose, glicose, ou outros tipos de açúcar, como a dextrose.Alimentos de ingredientes únicos como açúcar, café, leite, vinagre não
+        precisam apresentar lista de ingredientes. A lista de ingredientes deve estar em ordem decrescente, isto é, o primeiro ingrediente é aquele que está em
+        maiorquantidade no produto e o último, em menor quantidade.</string>>
+    <string name="origem">Informação que permite que o consumidor saiba quem é o fabricante do produto e onde ele foi fabricado. São importantes para o consumidor
+        saber qual a procedência do produto e entrar em contato com o fabricante se for necessário.</string>
+
+    <string name="prazo_validade">Os produtos devem apresentar pelo menos o dia e o mês quando o prazo de validade for inferior a três meses; o mês e o ano para produtos
+        que tenham prazo de validade superior a três meses. </string>
+    <string name="conteudo_liq">Indica a quantidade total de produto contido na embalagem. O valordeve ser expresso em unidade de massa (quilo) ou volume (litro).
+    </string>
+    <string name="lote">É um número que faz parte do controle na produção. Caso haja algum problema, o produto pode ser recolhido ou analisado pelo lote ao qual
+        pertence.</string>
+    <string name="info_nutri"> É a tabela nutricional. Sua leitura é importante porque a partir das informações nutricionais você pode fazer escolhas mais saudáveis
+        para você e sua família.</string>
+
+    <string name="ref_descr"> Para a construção do dicionário foram usadas as seguintes refêrencias:</string>
+
+    <string name="ref_luca"> LUCA, A. G.; SANTOS, S. A. Dialogando Ciência entre sabores, odores e aromas: contextualizando alimentos química e biologicamente.
+        São Paulo: Editora Livraria da Física, 2010.</string>
+
+    <string name="ref_whit"> WHITNEY, Eleanor Noss; ROLFES, Sharon Rady Rolfes. Nutrição: volume 1: entendendo os nutrientes. Cengage Learning, 2008.</string>
+
+
+    <string name="ref_anvisa"> http://www.anvisa.gov.br</string>
+
+</resources>
