@@ -13,7 +13,6 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
             android:id="@+id/nomeNutrienteText"
-            android:layout_below="@+id/button"
             android:layout_centerHorizontal="true"
             />
 
