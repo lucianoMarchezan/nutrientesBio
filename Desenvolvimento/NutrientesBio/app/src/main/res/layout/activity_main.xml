@@ -55,7 +55,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Sobre"
+        android:text="Referências"
         android:id="@+id/buttonSobre"
         android:layout_below="@+id/buttonRotulos"
         android:layout_alignParentRight="true"

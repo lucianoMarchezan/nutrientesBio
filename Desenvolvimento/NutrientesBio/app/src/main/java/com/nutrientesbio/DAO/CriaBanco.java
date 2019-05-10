@@ -100,7 +100,7 @@ public class CriaBanco extends SQLiteOpenHelper {
             sql = "INSERT INTO " + TABELA + " VALUES ("
                     + 9 + ","
                     + "'Adoçantes artificiais',"
-                    + "'É um substituto do açúcar, não é nutritivo, sendo que não fornece quantidade significativa de energia.'"
+                    + "'São substitutos do açúcar, não são nutritivos, sendo que não fornecem quantidade significativa de energia.'"
                     + ")";
             db.execSQL(sql);
 
@@ -123,13 +123,6 @@ public class CriaBanco extends SQLiteOpenHelper {
                     + 12 + ","
                     + "'Aditivos',"
                     + "'Substâncias não normalmente consumidas como alimentos, mas adicionadas a eles intencionalmente.'"
-                    + ")";
-            db.execSQL(sql);
-
-            sql = "INSERT INTO " + TABELA + " VALUES ("
-                    + 13 + ","
-                    + "'Adoçantes artificiais',"
-                    + "'Substitutos de açúcar que fornecem quantidade de energia insignificante ou nula.'"
                     + ")";
             db.execSQL(sql);
 
